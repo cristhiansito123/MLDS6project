@@ -1,7 +1,7 @@
 # Reporte de Datos
 
 Este documento contiene los resultados del análisis exploratorio de datos.
-
+![asdfas](docs/data/images/descarga.png)
 ## Resumen general de los datos
 
 En esta sección se presenta un resumen general de los datos. Se describe el número total de observaciones, variables, el tipo de variables, la presencia de valores faltantes y la distribución de las variables.
