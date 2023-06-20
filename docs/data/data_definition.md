@@ -2,24 +2,18 @@
 
 ## Origen de los datos
 
-- [ ] Especificar la fuente de los datos y la forma en que se obtuvieron. 
+- Los datos fueron obtenidos de Kaggle, y se descargan directamente del siguiente enlace: [Fraudulent transactions data](https://www.kaggle.com/datasets/chitwanmanchanda/fraudulent-transactions-data) 
 
 ## Especificación de los scripts para la carga de datos
 
-- [ ] Especificar los scripts utilizados para la carga de los datos. 
+- El script de carga se encuentra en: 'scripts/data_acquisition/dowload_data.ipynb'.
 
 ## Referencias a rutas o bases de datos origen y destino
 
-- [ ] Especificar las rutas o bases de datos de origen y destino para los datos.
+- Los datos .csv están en la siguiente dirección del drive "/content/drive/MyDrive/MLDS6project/data.csv"
 
 ### Rutas de origen de datos
 
-- [ ] Especificar la ubicación de los archivos de origen de los datos.
-- [ ] Especificar la estructura de los archivos de origen de los datos.
-- [ ] Describir los procedimientos de transformación y limpieza de los datos.
+El conjunto consta de datos estructurados en formato tabular, que en total tiene 6353307 datos en formato .csv y que tiene datos importantes como la cantidad de la transacción, clientes de origen y de recepción de la transacción, cuales transacciones fueron fraudulentas, etc.
 
-### Base de datos de destino
 
-- [ ] Especificar la base de datos de destino para los datos.
-- [ ] Especificar la estructura de la base de datos de destino.
-- [ ] Describir los procedimientos de carga y transformación de los datos en la base de datos de destino.
