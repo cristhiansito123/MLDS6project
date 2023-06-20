@@ -4,6 +4,8 @@
 ## Resumen general de los datos
 
 En general, el conjunto de datos está compuesto por:
+
+
 paso - mapea una unidad de tiempo en el mundo real. En este caso 1 paso es 1 hora de tiempo. Pasos totales 744 (simulación de 30 días).
 
 type - CASH-IN, CASH-OUT, DÉBITO, PAGO y TRANSFERENCIA.
