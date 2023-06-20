@@ -1,27 +1,44 @@
 # Reporte de Datos
 
-Este documento contiene los resultados del análisis exploratorio de datos.
-![Datos que tienen transacciones fraudulentas](images/descarga.png)
+
 ## Resumen general de los datos
 
-En esta sección se presenta un resumen general de los datos. Se describe el número total de observaciones, variables, el tipo de variables, la presencia de valores faltantes y la distribución de las variables.
+En general, el conjunto de datos está compuesto por:
+paso - mapea una unidad de tiempo en el mundo real. En este caso 1 paso es 1 hora de tiempo. Pasos totales 744 (simulación de 30 días).
+
+type - CASH-IN, CASH-OUT, DÉBITO, PAGO y TRANSFERENCIA.
+
+ammount - monto de la transacción en moneda local.
+
+nameOrig - cliente que inició la transacción
+
+oldbalanceOrg - saldo inicial antes de la transacción
+
+newbalanceOrig - nuevo saldo después de la transacción
+
+nameDest - cliente que es el destinatario de la transacción
+
+oldbalanceDest: destinatario del saldo inicial antes de la transacción. Tenga en cuenta que no hay información para clientes que comiencen con M (Comerciantes).
+
+newbalanceDest - destinatario del nuevo saldo después de la transacción. Tenga en cuenta que no hay información para clientes que comiencen con M (Comerciantes).
+
+isFraud: estas son las transacciones realizadas por los agentes fraudulentos dentro de la simulación. En este conjunto de datos específico, el comportamiento fraudulento de los agentes tiene como objetivo obtener ganancias tomando el control de las cuentas de los clientes e intentar vaciar los fondos transfiriéndolos a otra cuenta y luego cobrando del sistema.
+
+isFlaggedFraud: el modelo comercial tiene como objetivo controlar las transferencias masivas de una cuenta a otra y marca los intentos ilegales. Un intento ilegal en este conjunto de datos es un intento de transferir más de 200.000 en una sola transacción.
+
+Del total de los datos, 6354407 no son transacciones fraudulentas, pero 8213 si lo son, lo que se ve un desbalance importante en los datos
+![Datos que tienen transacciones fraudulentas](images/descarga.png)
 
 ## Resumen de calidad de los datos
 
-En esta sección se presenta un resumen de la calidad de los datos. Se describe la cantidad y porcentaje de valores faltantes, valores extremos, errores y duplicados. También se muestran las acciones tomadas para abordar estos problemas.
+En términos generales el dataset es utilizable, ya que todas las casillas tienen valores y no hay valores duplicado.
 
-## Variable objetivo
+## Variables objetivo
 
-En esta sección se describe la variable objetivo. Se muestra la distribución de la variable y se presentan gráficos que permiten entender mejor su comportamiento.
-
-## Variables individuales
-
-En esta sección se presenta un análisis detallado de cada variable individual. Se muestran estadísticas descriptivas, gráficos de distribución y de relación con la variable objetivo (si aplica). Además, se describen posibles transformaciones que se pueden aplicar a la variable.
-
+Se muestran las variables objetivo para el análisis, de esta manera sabremos como se relacionan:
+![Comparación de las variables](images/comparacion.png)
 ## Ranking de variables
 
-En esta sección se presenta un ranking de las variables más importantes para predecir la variable objetivo. Se utilizan técnicas como la correlación, el análisis de componentes principales (PCA) o la importancia de las variables en un modelo de aprendizaje automático.
+De esta manera, sabremos cuales son las variables más importantes para el análisis, por lo que hacemos un análisis PCA
 
-## Relación entre variables explicativas y variable objetivo
-
-En esta sección se presenta un análisis de la relación entre las variables explicativas y la variable objetivo. Se utilizan gráficos como la matriz de correlación y el diagrama de dispersión para entender mejor la relación entre las variables. Además, se pueden utilizar técnicas como la regresión lineal para modelar la relación entre las variables.
+![Análisis PCA](images/pca.png)
