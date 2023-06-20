@@ -2,7 +2,7 @@
 
 ## Base de datos 1
 
-**Agregar una descripción de la tabla o fuente de datos.
+**Los datos del caso están disponibles en formato CSV con 6362620 filas y 10 columnas.
 
 | Variable | Descripción | Tipo de dato | Rango/Valores posibles | Fuente de datos |
 | --- | --- | --- | --- | --- |
