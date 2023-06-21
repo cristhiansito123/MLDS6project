@@ -2,24 +2,31 @@
 
 ## Resumen Ejecutivo
 
-En esta sección se presentará un resumen de los resultados obtenidos del modelo final. Es importante incluir los resultados de las métricas de evaluación y la interpretación de los mismos.
-
+Uno de los mayores problemas al tratar de predecir transacciones fraudulentas es la poca cantidad de datos positivos que se tiene, esto hace que la precisión del modelo sea muy compleja ya que no tan solo un falso positivo con la poca cantidad de positivos que hay, disminuye la acertividad del modelo. 
 ## Descripción del Problema
 
-En esta sección se describirá el problema que se buscó resolver con el modelo final. Se debe incluir una descripción detallada del problema, el contexto en el que se desarrolla, los objetivos que se persiguen y la justificación del modelo.
+Se buscó implementar una red neuronal convolucional (CNN) combinada con una red neuronal recurrente (RNN) para predecir de una base de datos cuales transacciones son fraudulentas según características de estas transacciones.
 
 ## Descripción del Modelo
 
-En esta sección se describirá el modelo final que se desarrolló para resolver el problema planteado. Se debe incluir una descripción detallada del modelo, la metodología utilizada y las técnicas empleadas.
+La combinación de la parte convolucional y recurrente permite capturar tanto las características locales como las secuenciales de los datos de transacciones, lo que mejora la capacidad del modelo para detectar patrones de fraude en diferentes niveles de granularidad. Es importante destacar que los detalles específicos del modelo pueden variar según la implementación y los requisitos del proyecto.
 
 ## Evaluación del Modelo
 
-En esta sección se presentará una evaluación detallada del modelo final. Se deben incluir las métricas de evaluación que se utilizaron y una interpretación detallada de los resultados.
+La evaluación del modelo presentó las siguientes métricas de desempeño:
+
+Exactitud: 0.908410083927954
+Precisión: 0.01281398506449423
+Recall: 0.8728323699421965
+F1-score: 0.025257171531320562
 
 ## Conclusiones y Recomendaciones
 
-En esta sección se presentarán las conclusiones y recomendaciones a partir de los resultados obtenidos. Se deben incluir los puntos fuertes y débiles del modelo, las limitaciones y los posibles escenarios de aplicación.
+-Aumentar el tamaño y la diversidad del conjunto de datos de entrenamiento: Esto podría ayudar a que el modelo aprenda patrones más representativos y a reducir el desequilibrio entre las clases de transacciones fraudulentas y legítimas.
 
-## Referencias
+-Ajustar los umbrales de clasificación: Experimentar con diferentes umbrales de decisión puede ayudar a equilibrar la precisión y el recall. Ajustar el umbral puede permitir priorizar la reducción de los falsos positivos o los falsos negativos según sea necesario.
 
-En esta sección se deben incluir las referencias bibliográficas y fuentes de información utilizadas en el desarrollo del modelo.
+-Explorar técnicas de regularización: Las técnicas como la regularización L1 o L2 pueden ayudar a evitar el sobreajuste del modelo y mejorar su capacidad para generalizar a nuevos datos.
+
+-Experimentar con la arquitectura del modelo: Puede ser beneficioso probar diferentes arquitecturas de red neuronal, incluyendo cambios en el número y la disposición de las capas convolucionales y recurrentes, así como el uso de otras capas como capas de dropout para mejorar el rendimiento del modelo.
+
