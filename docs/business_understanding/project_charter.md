@@ -26,7 +26,7 @@ Estimación de transacciones fraudulentas para una empresa financiera
 ## Metodología
 
 Este diagrama explica la metodología a usar:
-[Metodología a usar](images/modelamiento.png)
+![Metodología a usar](images/modelamiento.png)
 
 ## Cronograma
 
