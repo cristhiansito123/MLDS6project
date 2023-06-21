@@ -2,27 +2,31 @@
 
 ## Nombre del Proyecto
 
-[Nombre del proyecto aquí]
+Estimación de transacciones fraudulentas para una empresa financiera
 
 ## Objetivo del Proyecto
 
-[Descripción breve del objetivo del proyecto y por qué es importante]
+ Integrar el modelo en un sistema o aplicación en tiempo real para que pueda clasificar nuevas transacciones y generar alertas o tomar medidas para prevenir transacciones fraudulentas.
 
 ## Alcance del Proyecto
 
 ### Incluye:
 
 - [Descripción de los datos disponibles]
+  Para el desarrollo del proyecto se realizará el procesamiento de transacciones financieras de una base de datos de Kaggle de 6362620 datos y 10 columnas, de las cuales se obtuvieron del siguiente enlace [Enlace de datos de Kaggle](https://www.kaggle.com/code/mikewaa/fraud-prediction). Estos datos se encuentran en formato CSV.
 - [Descripción de los resultados esperados]
+  Se espera que el despliegue tenga dos servicios, uno que ingrese los datos de una nueva transacción y otro que permita dar un mensaje si la transacción es buena o puede ser fraudulenta.
 - [Criterios de éxito del proyecto]
+  - Un servicio que permita hacer estimaciones aproximadas de transacciones fraudulentas
+  - Un modelo que permita identificar cuales transacciones potencialemnte pueden ser fraudulentas, para evitar que se cancelen transacciones en buen estado.
+  
 
-### Excluye:
 
-- [Descripción de lo que no está incluido en el proyecto]
 
 ## Metodología
 
-[Descripción breve de la metodología que se utilizará para llevar a cabo el proyecto]
+Este diagrama explica la metodología a usar:
+[Metodología a usar](images/modelamiento.png)
 
 ## Cronograma
 
@@ -38,21 +42,6 @@ Hay que tener en cuenta que estas fechas son de ejemplo, estas deben ajustarse d
 
 ## Equipo del Proyecto
 
-- [Nombre y cargo del líder del proyecto]
-- [Nombre y cargo de los miembros del equipo]
+- Cristhian David Sandoval Diaz
 
-## Presupuesto
 
-[Descripción del presupuesto asignado al proyecto]
-
-## Stakeholders
-
-- [Nombre y cargo de los stakeholders del proyecto]
-- [Descripción de la relación con los stakeholders]
-- [Expectativas de los stakeholders]
-
-## Aprobaciones
-
-- [Nombre y cargo del aprobador del proyecto]
-- [Firma del aprobador]
-- [Fecha de aprobación]
